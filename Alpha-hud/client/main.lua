@@ -17,15 +17,12 @@ PlayerJob = {}
 
 Citizen.CreateThread(function() 
     while true do
-        Citizen.Wait(10)
-        if QBCore == nil then
-            TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
-            Citizen.Wait(200)
-        end
-        if QBCore ~= nil then
+       local QBCore = exports['qb-core']:GetCoreObject()
+           
+      
             TriggerEvent("hud:client:SetMoney")
             return
-        end
+       
     end
 end)
 
