@@ -36,7 +36,7 @@ AddEventHandler("hud:client:DisplayBank", function(type)
     local src = source
     QBCore.Functions.GetPlayerData(function(PlayerData)
         bankAmount = PlayerData.money["bank"]
-    QBCore.Functions.Notify("Bank ৳ "..bankAmount.. "")
+    QBCore.Functions.Notify("Bank $ "..bankAmount.. "")
     end)
 end)
 
@@ -45,7 +45,7 @@ AddEventHandler("hud:client:DisplayCash", function(type)
     local src = source
     QBCore.Functions.GetPlayerData(function(PlayerData)
         bankAmount = PlayerData.money["cash"]
-    QBCore.Functions.Notify("Cash ৳ "..bankAmount.. "")
+    QBCore.Functions.Notify("Cash $ "..bankAmount.. "")
     end)
 end)
 
