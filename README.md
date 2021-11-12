@@ -9,3 +9,9 @@ https://media.discordapp.net/attachments/825767941814353971/908709815382073364/u
 # This Script Is For QBCore !!!
 
 ====> Will be releasing For ESX Too !!!
+
+
+# Support Server
+Alpha Framework (QB Inspired)- https://discord.gg/w9NF3ZDGEx 
+
+For Any Help , Join Discord !!
