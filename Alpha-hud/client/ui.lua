@@ -36,7 +36,7 @@ Citizen.CreateThread(function()
             local time = CalculateTimeToDisplay()
             local street1, street2 = GetStreetNameAtCoord(pos.x, pos.y, pos.z, Citizen.ResultAsInteger(), Citizen.ResultAsInteger())
             local current_zone = GetLabelText(GetNameOfZone(pos.x, pos.y, pos.z))
-            local fuel = exports['Alpha-fuel']:GetVehicleFuelLevel(GetVehiclePedIsIn(GetPlayerPed(-1)))
+            local fuel = exports['LegacyFuel']:GetFuel(GetVehiclePedIsIn(GetPlayerPed(-1)))
             local engine = GetVehicleEngineHealth(GetVehiclePedIsIn(GetPlayerPed(-1)))
             local ped = PlayerPedId()
             local oxy = GetPlayerUnderwaterTimeRemaining(PlayerId()) * 2
