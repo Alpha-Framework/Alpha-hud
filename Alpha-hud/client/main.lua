@@ -26,8 +26,8 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterNetEvent("QBCore:Client:OnPlayerUqboad")
-AddEventHandler("QBCore:Client:OnPlayerUqboad", function()
+RegisterNetEvent("QBCore:Client:OnPlayerUnload")
+AddEventHandler("QBCore:Client:OnPlayerUnload", function()
     isLoggedIn = false
     QBHud.Show = false
     SendNUIMessage({
