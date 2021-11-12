@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
  QBCore.Commands.Add("cash", "check your cash balance", {}, false, function(source, args)
 	local src = source
