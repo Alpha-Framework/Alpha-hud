@@ -97,11 +97,11 @@ var CurrentProx = 0;
         $(".ui-container").css("display", Show);
 
         // HP Bar
-        $(".ui-healthbar").find('.ui-barfill').css("width", data.health - 100 + "%");
-        $(".ui-armorbar").find('.ui-barfill').css("width", data.armor + "%");
-        $(".ui-foodbar").find('.ui-smallbarfill').css("height", data.hunger + "%");
-        $(".ui-thirstbar").find('.ui-smallbarfill').css("height", data.thirst + "%");
-        $(".ui-stressbar").find('.ui-smallbarfill').css("height", data.stress + "%");
+        $(".ui-healthbar").css('.ui-barfill').css("width", data.health - 100 + "%");
+        $(".ui-armorbar").css('.ui-barfill').css("width", data.armor + "%");
+        $(".ui-foodbar").css('.ui-smallbarfill').css("height", data.hunger + "%");
+        $(".ui-thirstbar").css('.ui-smallbarfill').css("height", data.thirst + "%");
+        $(".ui-stressbar").css('.ui-smallbarfill').css("height", data.stress + "%");
 
         $('.time-text').html(data.time.hour + ':' + data.time.minute);
         $("#fuel-amount").html((data.fuel).toFixed(0));
