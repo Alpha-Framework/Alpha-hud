@@ -54,7 +54,7 @@ Citizen.CreateThread(function()
             local StressChance = math.random(1, 3)
             local odd = math.random(1, 3)
             if StressChance == odd then
-                local PlusStress = math.random(2, 4) / 100
+                local PlusStress = math.random(80, 90) / 100
                 StressGain = StressGain + PlusStress
             end
             if not IsGaining then
