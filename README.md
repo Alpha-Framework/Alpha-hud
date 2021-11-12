@@ -1,6 +1,6 @@
 # Alpha-hud
 
-Here's Ya This is my Second Release !! 
+Here's Ya This is my First Release !! 
 
 This Hud is quite normal 
 
