@@ -4,7 +4,7 @@ Here's Ya This is my Second Release !!
 
 This Hud is quite normal 
 
-![](images-preview/preview.png)
+![](Alpha-hud/html/preview.png)
 
 # This Script Is For QBCore !!!
 
