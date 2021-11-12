@@ -4,7 +4,7 @@ Here's Ya This is my Second Release !!
 
 This Hud is quite normal 
 
-https://media.discordapp.net/attachments/825767941814353971/908709815382073364/unknown.png
+![](images-preview/preview.png)
 
 # This Script Is For QBCore !!!
 
