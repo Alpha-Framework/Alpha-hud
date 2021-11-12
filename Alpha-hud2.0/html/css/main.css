@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('pricedown_bl-webfont.woff2') format('woff2'),
+         url('pricedown_bl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gta-ui';
+    src: url('gta-ui.ttf');
+}
+
+@font-face {
+    font-family: 'pdown';
+    src: url('pdown.ttf');
+}
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.money-container {
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+}
+
+#cash {
+    color: white;
+}
+
+
+
+
+.money-cash,.money-bank {
+    display: none;
+    float:right;
+    font-family: 'pdown';
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.money-cash {
+    color: rgb(210, 210, 210);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+}
+
+
+.money-bank {
+    color: rgb(167, 167, 167);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    top: 55px;
+}
+
+#plus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #f0f0f0;
+}
+
+#minus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #f0f0f0;
+}
+
+.minus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #801e1f;
+}
+
+.munnie {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+.moneyupdate {
+    float: right;
+    padding-left: 0.5vw;
+}
+
+.plus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+.ui-container {
+    display: none;
+    font-size: 10vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: .1vh;
+}
+
+.ui-car-container {
+    display: none;
+}
+
+.ui-car-time {
+    display: block !important;
+    position: absolute;
+    font-size: 1.5vh;
+    bottom: 4.5vw;
+    left: 17vw;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.ui-car-meters {
+    display: block !important;
+    position: absolute;
+    font-size: 1.5vh;
+    bottom: 4.5vw;
+    left: 20.5vw;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.car-info {
+    position: relative;
+    float: left;
+}
+
+.ui-car-otherinfo {
+    position: absolute;
+    height: 3vh;
+    min-width: 5vh;
+    width: fit-content;
+    bottom: 4.30vh;
+    left: 17vw;
+    line-height: 3vh;
+    color: white;
+    font-size: 1.6vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.info-label {
+    
+    position: relative;
+    top: -.35vh;
+    font-size: 1vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.ui-car-street {
+    
+    font-size: 15px;
+    position: absolute;
+    bottom: 1.6vh;
+    left: 23.6vw;
+    text-shadow: 1px 1px 0px #000000;
+    color: #ffffff;
+}
+
+.car-engine-info img {
+
+    width: 3vh;
+}
+
+.car-seatbelt-info img {
+    
+    width: 3vh;
+    
+    
+}
+
+.seatbelt-text {
+    font-size: 1.45vh;
+    color: #46ad34;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.compass-container {
+    position: absolute;
+    width: 10.2vh;
+    height: 4.5vh;
+    bottom: 0.80vh;
+    left: 17.5vw;
+    overflow: hidden;
+}
+
+.compass-ui {
+    position: absolute;
+    width: 81.6vh;
+    height: 100%;
+    right: 0vh;
+}
+
+.compass-current {
+    position: absolute;
+    width: 100%;
+    height: 3vh;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.compass-current > span {
+    top: -6px;
+    position: relative;
+    top: -1.6vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.big-degree {
+    top: -6px;
+    position: relative;
+    float: left;
+    height: 60%;
+    width: 3vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: 1px 1px 0px #000000;
+    text-align: center;
+    border-radius: 50px 50px 0 50px;
+    font-size: 2.1vh;
+    line-height: 3vh;
+    top: 1.5vh;
+    box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.5);
+}
+
+.big-degree-line {
+    top: -6px;
+    color: white !important;
+    font-size: 1.2vh !important;
+    text-shadow: 1px 1px 0px #000000;
+    border-radius: 50px 50px 0 50px;
+}
+
+.degree-line {
+    top: -6px;
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 0.8vh;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-size: 1.1vh;
+    margin-top: 1.6vh;
+    line-height: 3.5vh;
+    text-shadow: 1px 1px 0px #000000;
+    border-radius: 50px 50px 0 50px;
+}
+
+.degree-label {
+    top: -6px;
+    position: absolute;
+    bottom: 2.4vh;
+    left: -.6vh;
+    font-size: 1.3vh;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-variant: normal !important;
+    text-shadow: 1px 1px 0px #000000;
+    
+}
+
+/* NEW UI */
+
+.ui-bars-container {
+    position: absolute;
+    width: 27.3vh;
+    height: 2.8vh;
+    bottom: .7vh;
+    left: 2.90vh;
+}
+
+/* Container Styling */
+
+.ui-healthbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 1px;
+    
+}
+
+.ui-armorbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 50px;
+
+}
+
+.ui-foodbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 50px 50px 0 50px;
+
+}
+
+.ui-thirstbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 50px 50px 0 50px;
+
+}
+
+.ui-bleedbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 220px 220px 0 260px;
+    z-index: 1000;
+
+
+}
+
+.ui-stressbar {
+    top: 0;
+    position: relative;
+    height: 5px;
+    border: .1vh solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 220px 220px 0 260px;
+    
+
+
+}
+
+/* Icon Styling */
+
+.ui-healthbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: 0;
+    padding: .51vh;
+    color: rgba(255, 255, 255, 0.911);
+    text-shadow: .12vh .01vh .08vh rgba(0, 0, 0, 0.2);
+}
+
+.ui-armorbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: 0;
+    padding: .49vh;
+    color: rgb(249, 249, 249);
+    text-shadow: .12vh .01vh .08vh rgba(0, 0, 0, 0.2);
+}
+
+.ui-foodbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: .05vh;
+    padding: .45vh;
+    color: rgba(249, 249, 249, 1.0);
+    text-shadow: .12vh .01vh .08vh rgba(0, 0, 0, 0.2);
+    z-index: 101;
+}
+
+.ui-thirstbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: .1vh;
+    padding: .45vh;
+    color: rgba(249, 249, 249, 1.0);
+    text-shadow: .12vh .01vh .08vh rgba(0, 0, 0, 0.2);
+    z-index: 101;
+}
+
+.ui-bleedbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: .2vh;
+    padding: .45vh;
+    color: rgba(249, 249, 249, 1.0);
+    text-shadow: .12vh .01vh .08vh rgba(0, 0, 0, 0.2);
+    z-index: 0;
+
+    /* z-index: 101; */
+    /* background-image: url(html/oxy.svg); */
+}
+
+.ui-stressbar > i {
+    position: absolute;
+    font-size: 1.3vh;
+    top: 0;
+    left: 0.1;
+    padding: .45vh;
+    color: rgba(231, 26, 26, 0.8);
+    text-shadow: .08vh .02vh .1vh rgba(0, 0, 0, 0.2);
+    z-index: 101;
+}
+
+/* Fill Color */
+
+.ui-healthbar > .ui-barfill {
+    background-color: rgba(50, 219, 24, 0.836);
+    z-index: 0;
+    border-radius: 50px;
+
+}
+
+.ui-armorbar > .ui-barfill {
+    background-color: #179fe4;
+    border-radius: 50px;
+
+}
+
+.ui-foodbar > .ui-smallbarfill {
+    background-color: #f0932b;
+     border-radius: 50px 50px 0 50px;
+
+}
+
+.ui-thirstbar > .ui-smallbarfill {
+    background-color: #3467d4;
+    z-index: 0;
+     border-radius: 50px 50px 0 50px;
+
+
+}
+
+.ui-bleedbar > .ui-bleedbarfill {
+    background: rgb(76,91,117);
+    height: 60%;
+    border-radius: 20px 60px 0 80px;
+
+
+}
+
+.ui-stressbar > .ui-smallbarfill {
+    background-color: #e056fd;
+    height: 60%;
+    border-radius: 20px 60px 0 80px;
+    
+}
+
+/* Bar Types */
+
+.ui-bigbar {
+    float: left;
+    width: 25%;
+    margin-right: 1%;
+}
+
+.ui-smallbar {
+    float: left;
+    width: 11%;
+    margin-right: 1%;
+}
+
+.ui-barfill {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+}
+
+.ui-smallbarfill {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+}
+
+
+.ui-bleedbarfill {
+    position: absolute;
+ 
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+}
+
+
+[data-voicetype="3"] {
+    position: absolute;
+    top: 0;
+}
+
+[data-voicetype="2"] {
+    position: absolute;
+    top: .9vh;
+}
+
+[data-voicetype="1"] {
+    position: absolute;
+    bottom: 0;
+}
+#bank {
+    color: white;
+}
+
+#icon {
+	height: 21px;
+	width: auto;
+	margin-right: 10px;
+}
+
+
+#barIcon {
+	position: absolute;
+    top: -30px;
+    left: .2vh;
+    padding: .35vh;
+    z-index: 102;
+}
