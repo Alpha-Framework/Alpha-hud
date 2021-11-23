@@ -3,7 +3,7 @@
 Here's Ya This is my First Release !! 
 
 This Hud is quite normal 
-
+Click <a href="http://www.yahoo.com">here</a> to go to yahoo.
 Hud For Old QBCore - "Download":https://cdn.discordapp.com/attachments/908937570577174529/908950058886647808/Alpha-hud.rar
 
 
